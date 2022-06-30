@@ -5,7 +5,7 @@ import route from "./routes/index";
 import mongoose from "mongoose";
 const app = express();
  app.use(bodyParser.json());
- app.use("/",route);
+ app.use("/am/",route);
 
  //database configuration
  const database = process.env.DATABASE;

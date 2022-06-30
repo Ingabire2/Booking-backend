@@ -1,4 +1,12 @@
+import UserModel from "../models/user"
 class UserServices {
+
+  //registering user
+   static async registerUser(req){
+  const user = await UserModel.create(req.body);
+
+  return user;
+   }
 
    static testFunction(req){
 
